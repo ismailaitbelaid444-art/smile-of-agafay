@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smile of Agafay</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#fff3d6;
+}
+
+header {
+    background:#e76f51;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+.buttons {
+    margin-top:15px;
+}
+
+button {
+    padding:12px 18px;
+    margin:5px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.book {background:#2a9d8f; color:white;}
+.insta {background:#833ab4; color:white;}
+.lang {background:#264653; color:white;}
+
+.section {
+    padding:25px;
+    text-align:center;
+}
+
+.images img {
+    width:280px;
+    height:190px;
+    margin:8px;
+    border-radius:10px;
+    object-fit:cover;
+}
+</style>
+
+<script>
+function setLang(lang){
+    document.getElementById("en").style.display = (lang=="en") ? "block" : "none";
+    document.getElementById("fr").style.display = (lang=="fr") ? "block" : "none";
+}
+</script>
+</head>
+
+<body onload="setLang('en')">
+
+<header>
+<h1>🌴 Welcome to Smile of Agafay</h1>
+<p>Your new desert destination</p>
+
+<div class="buttons">
+<button class="lang" onclick="setLang('en')">English</button>
+<button class="lang" onclick="setLang('fr')">Français</button>
+
+<a href="https://www.instagram.com/smile_of_agafay" target="_blank">
+<button class="insta">Instagram</button>
+</a>
+
+<a href="https://wa.me/212695892518" target="_blank">
+<button class="book">Book Now</button>
+</a>
+</div>
+</header>
+
+<div class="section images">
+<img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg">
+<img src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg">
+<img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg">
+</div>
+
+<div id="en" class="section">
+<h2>Desert Experiences</h2>
+<p>Enjoy camel rides, 30-minute quad adventures, family-friendly activities, and private events such as weddings and birthdays.</p>
+</div>
+
+<div id="fr" class="section" style="display:none;">
+<h2>Expériences dans le désert</h2>
+<p>Profitez des balades à dos de chameau, des aventures en quad de 30 minutes, des activités familiales et des événements privés comme les mariages et anniversaires.</p>
+</div>
+
+</body>
+</html>
